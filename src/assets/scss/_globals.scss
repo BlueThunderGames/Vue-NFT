@@ -2,5 +2,94 @@
 
 body 
 {
+    @include monda;
     background-color:$black;
+    color:#FFFFFF;
+    font-size:21px;
+    font-weight:400;
+}
+h1 
+{
+    @include azo;
+    color:$brightPink;
+    font-size:130px;
+    line-height:1;
+}
+h2 
+{
+    @include azo;
+    font-size:67px;
+    line-height:62px;
+}
+h3 
+{
+    @include mont;
+    font-size:56px;
+    line-height:1.0;
+    letter-spacing:2.8px;
+}
+h4 
+{
+    @include mont;   
+    font-size:32px;
+    line-height:1.2; 
+}
+nav 
+{
+    a.active, a:hover 
+    {
+        color:$brightPink;
+    }
+}
+a{
+    @include transition;
+}
+.btn 
+{
+    position:relative;
+    font-weight:700;
+    border-radius:370px;
+    border:1px solid $brightPink;
+    padding:21px 49px 19px 16px;
+    line-height:1;
+
+    .diamond 
+    {
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        right:16px;
+        width:24px;
+        height:24px;
+
+        svg 
+        {
+            vertical-align: top;
+            display:inline;
+            width:100%;
+            height:auto;
+
+            path 
+            {
+                @include transition;
+            }
+        }
+    }
+}
+.btn:hover 
+{
+    background-color:$brightPink;
+    color:$black;
+
+    .diamond 
+    {
+        svg path
+        {
+            fill:$black;
+        }
+    }
+}
+.pink 
+{
+    color:$brightPink;
 }

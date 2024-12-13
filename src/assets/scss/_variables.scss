@@ -1,3 +1,28 @@
 $black: #050104;
 $brightPink: #FD06B2;
 $white: #FFFFFF;
+
+@mixin azo 
+{
+    font-family: 'azo-sans-web', sans-serif;
+    font-weight:900;
+    text-transform:uppercase;
+}
+@mixin monda 
+{
+    font-family: 'Monda', sans-serif;
+}
+@mixin mont 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+    text-transform:uppercase;
+}
+@mixin uppercase
+{
+    text-transform: uppercase;
+}
+@mixin transition 
+{
+    transition: all .15s ease;
+}
