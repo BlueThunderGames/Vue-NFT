@@ -1,0 +1,56 @@
+.banner 
+{
+    .img-container
+    {
+        overflow:hidden;
+        border-radius:100%;
+        background: linear-gradient(159deg, rgba(242, 0, 106, 0.00) 40%, rgba(253, 6, 178, 0.5) 70%, #176182 90%);
+    }
+}
+@media screen and (max-width:1568px)
+{
+    .banner .img-container img
+    {
+       width:60%;
+    }
+}
+@media screen and (min-width:1400px) and (max-width:1567px)
+{
+    .banner .img-container 
+    {
+        width:500px;
+        height:500px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1399px)
+{
+    .banner .img-container 
+    {
+        width:500px;
+        height:500px;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1199px)
+{
+    .banner .img-container 
+    {
+        width:400px;
+        height:400px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .banner .img-container 
+    {
+        width:400px;
+        height:400px;
+    }
+}
+@media screen and (max-width:767px)
+{
+    .banner .img-container 
+    {
+        width:280px;
+        height:280px;
+    }
+}

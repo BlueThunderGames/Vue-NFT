@@ -10,28 +10,28 @@ const faqs  =
     },
     {
         id: 2,
-        question: 'What happens after I purchase an NFT?',
+        question: 'What happens <span class="pink">after</span> I purchase an NFT?',
         answer: 'After purchasing an NFT, it will be securely stored in your digital wallet within our platform. You can choose to keep it as a digital collectible, showcase it in your profile, or even resell it on our marketplace.'
     },
     {
         id: 3,
-        question: 'How can I ensure the authenticity of an NFT?',
+        question: 'How can I ensure the <span class="pink">authenticity</span> of an NFT?',
         answer: 'After purchasing an NFT, it will be securely stored in your digital wallet within our platform. You can choose to keep it as a digital collectible, showcase it in your profile, or even resell it on our marketplace.'
     },
     {
         id: 4,
-        question: 'Can I sell my own NFTs on your platform?',
+        question: 'Can I <span class="pink">sell</span> my own NFTs on your platform?',
         answer: 'Absolutely! We welcome creators to showcase and sell their own NFTs on our platform. Simply create an account, upload your digital creations, set the price, and list them for sale. It\'s an opportunity to share your talent and connect with a vibrant community of collectors.'
     },
     {
         id: 5,
-        question: 'What happens if I lose access to my digital wallet?',
+        question: 'What happens if I <span class="pink">lose</span> access to my digital wallet?',
         answer: 'We strongly recommend safeguarding your digital wallet credentials. However, in the unfortunate event of losing access, our support team is here to assist you. Please reach out to our customer support, providing relevant information, and we\'ll guide you through the recovery process.'
     }
 ];
 </script>
 <template>
-    <section class="faqs">
+    <section class="faqs-container pt-3 xl:pt-6" id="faqs">
         <FaqItem 
             v-for="faq in faqs" 
             :key="faq.question" 

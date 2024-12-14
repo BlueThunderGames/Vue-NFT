@@ -2,24 +2,24 @@
 
 </script>
 <template>
-    <section class="introduction border-b border-white">
+    <section class="introduction border-b border-white pt-8 md:pt-14 xl:pt-28 pb-20 xl:pb-40" id="about">
         <div class="container mx-auto">
-            <div class="intro-upper">
-                <div class="heading-wrapper relative z-3">
+            <div class="intro-upper xl:w-[82%] relative mb-10 md:mb-60">
+                <div class="heading-wrapper relative z-10 md:w-[50%] pb-8 md:pb-14 xl:pb-28 md:pt-14">
                     <h4>
                         Welcome to our <span class="pink">NFT platform</span>, where art, creativity, & blockchain technology intersect.
                     </h4>
                 </div>
-                <div class="copy-wrapper relative z-3">
+                <div class="copy-wrapper relative z-10 max-md:mb-10 md:w-[50%] lg:pl-12 md:pt-12 xl:pl-24 xl:pt-24">
                     <p>
                         We are <span class="pink">passionate</span> about empowering artists, collectors, and enthusiasts in the ever-evolving world of digital art and collectibles. Our platform Is a <span class="pink">vibrant</span> marketplace, connecting creators with a global audience and providing collectors with a diverse range of unique and <span class="pink">authenticated</span> NFTs. 
                     </p>
                 </div>
-                <div class="intro-img">
-                    <img alt="Introduction Image" />
+                <div class="intro-img md:absolute md:top-0 md:right-0 xl:right-12 z-0 md:max-w-[50%]">
+                    <img alt="Introduction Image" src="/src/assets/img/introduction-img.jpg" width="563px" height="744px" />
                 </div>
             </div>
-            <div class="intro-lower md:flex">
+            <div class="intro-lower md:flex md:justify-between lg:pt-40 xl:pt-0">
                 <div class="flair md:w-6/12">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@
                     </svg>
                 </div>
                 <div class="copy flex justify-end">
-                    <div class="copy-inner md:w-[480px]">
+                    <div class="copy-inner max-md:pt-10 md:w-[480px]">
                         <p>
                             We believe in the transformative power of NFTs to <span class="pink">revolutionize</span> ownership and expression in the digital realm, and we invite you to join us on this exciting journey of <span class="pink">exploration</span>, discovery, and creation.
                         </p>

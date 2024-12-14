@@ -24,7 +24,7 @@ export default {
       width: {
         DEFAULT: "100%",
         xl: "1440px",
-      }
+      },
     },
     colors: {
       'theme-black' : '#050104',

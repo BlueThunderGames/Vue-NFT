@@ -1,0 +1,34 @@
+@media screen and (max-width:768px)
+{
+    .scrolly-wrapper
+    {
+        h3
+        {
+            font-size:22px;
+            padding-right:35px;
+        }
+        .diamond 
+        {
+            width:20px;
+            height:20px;
+
+            svg 
+            {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+}
+@media screen and (max-width:568px)
+{
+    .scrolly-wrapper h3 
+    {
+        display:block;
+        padding-right:0;
+        .diamond 
+        {
+            display:none;
+        }
+    }
+}

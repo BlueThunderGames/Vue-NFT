@@ -30,9 +30,9 @@ const collections = [
 ];
   </script>
 <template>
-  <section class="collections border-b border-white">
+  <section class="collections-wrapper border-b border-white py-10 xl:py-20" id="collections">
     <div class="container mx-auto">
-      <div class="collections-upper md:flex md:justify-between">
+      <div class="collections-upper md:flex md:justify-between pb-20 xl:pb-40">
         <div class="flair">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ const collections = [
           </svg>
         </div>
         <div class="copy flex justify-end">
-          <div class="copy-inner md:w-[357px]">
+          <div class="copy-inner max-md:pt-10 md:w-[357px]">
             <p>
               Immerse yourself in exquisite collections by renowned artists.
               Explore a curated showcase of exceptional NFTs.
@@ -136,7 +136,7 @@ const collections = [
           </div>
         </div>
       </div>
-      <div class="collections-lower lg:flex lg:wrap w-full">
+      <div class="collections-lower lg:flex lg:wrap w-full lg:justify-between mb-16 xl:mb-32">
             <CollectionItem 
             v-for="(collection, index) in collections"
             :key="index"

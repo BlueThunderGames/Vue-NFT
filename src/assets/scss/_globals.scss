@@ -41,6 +41,14 @@ nav
         color:$brightPink;
     }
 }
+p, ul li, ol li 
+{
+    font-size:16px;
+}
+.larger-text 
+{
+    font-size:21px;
+}
 a{
     @include transition;
 }
@@ -92,4 +100,199 @@ a{
 .pink 
 {
     color:$brightPink;
+}
+.deco-line
+{
+    width:180px;
+    max-width:100%;
+    height:1px;
+    background-color:#FFFFFF;
+    margin:0 auto 0 auto;
+}
+form 
+{
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"]
+    {
+        background-color:#FFFFFF;
+        box-shadow: 0px 6px 12px -6px rgba(255, 255, 255, 0.12), 0px 8px 24px -4px rgba(255, 255, 255, 0.08);
+        font-size:16px;
+        color:$black;
+        outline:none;
+    }
+    input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder, input[type="tel"]::placeholder 
+    {
+        color:$black;
+    }
+    button[type="submit"]
+    {
+        @include mont;
+        @include transition;
+        background-color:$brightPink;
+        color:#FFFFFF;
+        font-weight:900;
+        border-radius:0;
+        border:1px solid #FFFFFF;
+        line-height:1;
+        font-size:16px;
+    }
+}
+header 
+{
+    .logo 
+    {
+        display:inline-block;
+        
+        svg 
+        {
+            path 
+            {
+                @include transition;
+            }
+        }
+    }
+    .logo:hover 
+    {
+        svg path 
+        {
+            fill:$brightPink;
+        }
+    }
+    .btn 
+    {
+        padding-top:13px;
+        padding-bottom:11px;
+        padding-right:30px;
+        font-size:16px;
+
+        .diamond 
+        {
+            width:16px;
+            height:16px;
+            right:10px;
+            svg 
+            {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+}
+@media screen and (max-width:1568px)
+{
+    .container 
+    {
+        max-width:100%;
+    }
+}
+@media screen and (min-width:1400px) and (max-width:1567px)
+{
+    h1 
+    {
+        font-size:100px;
+    }
+    h2 
+    {
+        font-size:50px;
+        line-height:50px;
+    }
+    h3 
+    {
+        font-size:45px;
+        line-height:1.0;
+        letter-spacing:2.5px;
+    }
+    h4 
+    {
+        font-size:28px;
+        line-height:1.2;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1399px)
+{
+    h1 
+    {
+        font-size:100px;
+    }
+    h2 
+    {
+        font-size:50px;
+        line-height:50px;
+    }
+    h3 
+    {
+        font-size:45px;
+        line-height:1.0;
+        letter-spacing:2.5px;
+    }
+    h4 
+    {
+        font-size:28px;
+        line-height:1.2;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1199px)
+{
+    h1 
+    {
+        font-size:80px;
+    }
+    h2 
+    {
+        font-size:46px;
+    }
+    h3 
+    {
+        font-size:40px;
+        line-height:1.0;
+        letter-spacing:2.5px;
+    }
+    h4 
+    {
+        font-size:24px;
+        line-height:1.2;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    h1 
+    {
+        font-size:80px;
+    }
+    h2 
+    {
+        font-size:46px;
+    }
+    h3 
+    {
+        font-size:40px;
+        line-height:1.0;
+        letter-spacing:2.5px;
+    }
+    h4 
+    {
+        font-size:24px;
+        line-height:1.2;
+    }
+}
+@media screen and (max-width:768px)
+{
+    h1 
+    {
+        font-size:60px;
+    }
+    h2 
+    {
+        font-size:38px;
+    }
+    h3 
+    {
+        font-size:32px;
+        line-height:1.0;
+        letter-spacing:2.5px;
+    }
+    h4 
+    {
+        font-size:22px;
+        line-height:1.2;
+    }
 }
