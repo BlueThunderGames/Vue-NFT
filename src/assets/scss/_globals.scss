@@ -7,6 +7,7 @@ body
     color:#FFFFFF;
     font-size:21px;
     font-weight:400;
+    overflow-x:hidden;
 }
 h1 
 {
@@ -63,6 +64,7 @@ a{
 
     .diamond 
     {
+        @include transition;
         position:absolute;
         top:50%;
         transform:translateY(-50%);
@@ -91,6 +93,8 @@ a{
 
     .diamond 
     {
+        @include jiggle;
+
         svg path
         {
             fill:$black;
@@ -144,6 +148,7 @@ header
         
         svg 
         {
+            @include transition;
             path 
             {
                 @include transition;
@@ -152,6 +157,10 @@ header
     }
     .logo:hover 
     {
+        svg 
+        {
+            transform:rotate(360deg);
+        }
         svg path 
         {
             fill:$brightPink;
@@ -177,6 +186,29 @@ header
         }
     }
 }
+// Define the keyframes animation
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    5%, 25% {
+      opacity: 1;
+    }
+  }
+  
+  // Apply the animation to each path inside .flair using a loop
+  .flair svg path {
+    @include transition;
+    opacity: 0; // Ensure paths are hidden by default
+    animation: fadeInOut 2.625s linear infinite;
+  }
+  
+  // Loop to generate nth-child selectors with different animation delays
+  @for $i from 1 through 21 {
+    .flair svg path:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.125s};
+    }
+  }
 @media screen and (max-width:1568px)
 {
     .container 
