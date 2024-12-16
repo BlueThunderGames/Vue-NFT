@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+html 
+{
+    scroll-behavior: smooth;
+}
 body 
 {
     @include monda;
@@ -8,6 +12,11 @@ body
     font-size:21px;
     font-weight:400;
     overflow-x:hidden;
+    padding-top:75px;
+}
+header 
+{
+    background-color:$black;
 }
 h1 
 {
@@ -139,6 +148,10 @@ form
         line-height:1;
         font-size:16px;
     }
+    button[type="submit"]:hover 
+    {
+        color:$black;
+    }
 }
 header 
 {
@@ -185,7 +198,49 @@ header
             }
         }
     }
+    .hamburger 
+    {
+        svg path 
+        {
+            @include transition;
+        }
+    }
+    .hamburger:hover 
+    {
+        svg path 
+        {
+            stroke:$brightPink;
+        }
+    }
 }
+footer 
+{
+    .social-link 
+    {
+        svg 
+        {
+            @include transition;
+
+            circle 
+            {
+                @include transition;
+            }
+        }
+        
+    }
+    .social-link:hover 
+    {
+
+        svg path 
+        {
+            fill:$black;
+        }
+    }
+}
+body .swiper > .swiper-wrapper{
+    transition-timing-function : linear;
+    transition-duration:0ms;
+  }
 // Define the keyframes animation
 @keyframes fadeInOut {
     0%, 100% {
@@ -305,6 +360,7 @@ header
         font-size:24px;
         line-height:1.2;
     }
+
 }
 @media screen and (max-width:768px)
 {

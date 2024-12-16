@@ -8,7 +8,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <div class="faq-item border-b border-white py-10 xl:py-14" data-aos="fade-up" data-aos-delay="200" data-aos-offset="100">
+    <div class="faq-item border-b border-white py-10 xl:py-14" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">
         <div class="container mx-auto">
             <div class="lg:flex lg:justify-between">
                 <div class="lg:w-6/12 lg:pr-12 xl:pr-24">

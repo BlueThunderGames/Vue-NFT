@@ -1,8 +1,43 @@
-@use '../_variables.scss' as *;
-
-.scrolly-wrapper 
+@media screen and (min-width:1600px) and (max-width:2320px)
 {
+    .scrolly-wrapper h3 
+    {
+        font-size:42px;
 
+        svg 
+        {
+            width:40px;
+            height:40px;
+        }
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1599px)
+{
+    .scrolly-wrapper h3 
+    {
+        font-size:32px;
+
+        padding-right:40px;
+        svg 
+        {
+            width:30px;
+            height:30px;
+        }
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1199px)
+{
+    .scrolly-wrapper h3 
+    {
+        font-size:26px;
+
+        padding-right:40px;
+        svg 
+        {
+            width:26px;
+            height:26px;
+        }
+    }
 }
 @media screen and (max-width:768px)
 {

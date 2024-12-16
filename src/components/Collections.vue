@@ -30,7 +30,7 @@ const collections = [
 ];
   </script>
 <template>
-  <section class="collections-wrapper border-b border-white py-10 xl:py-20" id="collections">
+  <section class="collections-wrapper border-b border-white py-10 xl:py-20">
     <div class="container mx-auto">
       <div class="collections-upper md:flex md:justify-between pb-20 xl:pb-40">
         <div class="flair">
@@ -176,7 +176,7 @@ const collections = [
             />
       </div>
       <div class="flex justify-center">
-        <Button text="Explore More" link="/some-url" target="_self"></Button>
+        <Button text="Explore More" link="#about" target="_self"></Button>
       </div>
     </div>
   </section>

@@ -6,7 +6,7 @@
         <div
           class="creation-col w-[24%] max-lg:w-[50%] max-md:w-[100%] max-lg:mr-auto max-lg:ml-auto"
         >
-          <div class="creation-item border-t border-white pt-8 mb-10" data-aos="fade-right" data-aos-offset="200">
+          <div class="creation-item border-t border-white pt-8 mb-10" data-aos="fade-right" data-aos-offset="400">
             <div class="item-title mb-2">
               <p class="font-mont uppercase larger-text">The <br />Odyssey</p>
             </div>
@@ -18,7 +18,7 @@
               style="background-image: url('/src/assets/img/laura-art.jpg')"
             ></div>
           </div>
-          <div class="creation-item border-t border-white pt-8 mb-10 md:mb-0" data-aos="fade-right" data-aos-offset="200">
+          <div class="creation-item border-t border-white pt-8 mb-10 md:mb-0" data-aos="fade-right" data-aos-offset="400">
             <div class="item-title mb-2">
               <p class="font-mont uppercase larger-text">Eternal <br />Nexus</p>
             </div>
@@ -175,7 +175,7 @@
         <div
           class="creation-col w-[24%] max-lg:w-[50%] max-md:w-[100%] max-lg:mr-auto max-lg:ml-auto"
         >
-          <div class="creation-item border-t border-white pt-8 mb-10" data-aos="fade-left" data-aos-offset="200">
+          <div class="creation-item border-t border-white pt-8 mb-10" data-aos="fade-left" data-aos-offset="400">
             <div class="item-title mb-2">
               <p class="font-mont uppercase larger-text">
                 The Epitome <br />of Beauty
@@ -189,7 +189,7 @@
               style="background-image: url('/src/assets/img/maurice-art.jpg')"
             ></div>
           </div>
-          <div class="creation-item border-t border-white pt-8" data-aos="fade-left" data-aos-offset="200">
+          <div class="creation-item border-t border-white pt-8" data-aos="fade-left" data-aos-offset="400">
             <div class="item-title mb-2">
               <p class="font-mont uppercase larger-text">The <br />Enigma</p>
             </div>

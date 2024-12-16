@@ -31,7 +31,7 @@ const faqs  =
 ];
 </script>
 <template>
-    <section class="faqs-container pt-3 xl:pt-6" id="faqs">
+    <section class="faqs-container pt-3 xl:pt-6">
         <FaqItem 
             v-for="faq in faqs" 
             :key="faq.question" 

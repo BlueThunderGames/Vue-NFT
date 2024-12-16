@@ -1,14 +1,30 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps} from 'vue'
+import { navigateTo } from '../assets/methods/navigateTo';
 
 const props = defineProps({
     text: String,
     link: String,
     target: String
 })
+
+const handleClick = (event: Event) => {
+  if (props.link && props.link.startsWith('#')) {
+    event.preventDefault();
+    const sectionId = props.link.substring(1);
+    console.log(sectionId);
+    navigateTo(sectionId);
+  }
+};
+
 </script>
 <template>
-    <a :href="link" :target="target ?? '_self'" class="btn inline-block relative">
+    <a 
+        :href="link" 
+        :target="target ?? '_self'" 
+        class="btn inline-block relative"
+        @click="handleClick"
+    >
         <span>{{ text }}</span>
         <span class="diamond">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

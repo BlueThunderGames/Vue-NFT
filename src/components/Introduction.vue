@@ -2,7 +2,6 @@
 <template>
   <section
     class="introduction border-b border-white pt-8 md:pt-14 xl:pt-28 pb-20 xl:pb-40"
-    id="about"
   >
     <div class="container mx-auto">
       <div class="intro-upper xl:w-[82%] relative mb-10 md:mb-60">
@@ -29,7 +28,7 @@
         <div
           class="intro-img md:absolute md:top-0 md:right-0 xl:right-12 z-0 md:max-w-[50%]"
           data-aos="fade-up"
-          data-aos-offset="200"
+          data-aos-offset="400"
         >
           <img
             alt="Introduction Image"

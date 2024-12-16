@@ -15,7 +15,7 @@
             </div>
             <ul class="flex gap-8">
               <li>
-                <a href="" class="social-link">
+                <a aria-label="View our Facebook" href="https://facebook.com" target="_blank" class="social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -32,7 +32,7 @@
                 </a>
               </li>
               <li>
-                <a href="" class="social-link">
+                <a aria-label="View our Twitter" href="https://x.com" class="social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -56,7 +56,7 @@
                 </a>
               </li>
               <li>
-                <a href="" class="social-link">
+                <a aria-label="View our Instagram" href="https://instagram.com" target="_blank" class="social-link">
                   <svg
                     width="30"
                     height="30"
@@ -85,7 +85,7 @@
                 </a>
               </li>
               <li>
-                <a href="" class="social-link">
+                <a aria-label="Get Directions" href="https://www.google.com/maps" target="_blank" class="social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -242,7 +242,7 @@
               </svg>
             </div>
           </div>
-          <div class="lg:w-6/12 py-12 lg:pl-12">
+          <div class="lg:w-6/12 py-12 lg:pl-12" id="contact">
             <div class="heading-wrapper mb-8">
               <h4>Subscribe for Updates</h4>
             </div>

@@ -65,7 +65,7 @@ const aosTypeLeft = computed(() => {
                 the boundless potential of the blockchain.
               </p>
             </div>
-            <Button text="View Collections" link="/some-url"></Button>
+            <Button text="View Collections" link="#collections"></Button>
           </div>
         </div>
       </div>
