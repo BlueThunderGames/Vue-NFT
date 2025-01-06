@@ -1,4 +1,31 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import emailjs from 'emailjs-com';
+import {ref} from 'vue';
+
+const form = ref(null);
+const mailSent = ref(false);
+
+const sendEmail = (event) => {
+  event.preventDefault();
+
+  mailSent.value = true;
+
+  if (form.value) {
+    const formData = new FormData(form.value as HTMLFormElement);
+
+    const emailData = {
+      email: formData.get('email'),
+    }
+
+    emailjs.send('service_hw8n12c', 'template_42207q6', emailData, 'nMvB0J-nVEOipvPly')
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+  }
+}
+</script>
 <template>
   <footer>
     <div class="footer-spacer container mx-auto py-12 xl:py-24">
@@ -246,10 +273,11 @@
             <div class="heading-wrapper mb-8">
               <h4>Subscribe for Updates</h4>
             </div>
-            <form class="flex">
+            <form ref="form" v-if="!mailSent" @submit="sendEmail" class="flex">
               <div class="input-container w-8/12 xl:w-8/12">
                 <input
                   type="email"
+                  name="email"
                   class="w-full h-[60px] pl-4"
                   required
                   placeholder="Enter your email address"
@@ -261,6 +289,9 @@
                 </button>
               </div>
             </form>
+            <div v-else class="flex items-center">
+              <p class="text-white">Thank you for subscribing!</p>
+            </div>
           </div>
         </div>
       </div>

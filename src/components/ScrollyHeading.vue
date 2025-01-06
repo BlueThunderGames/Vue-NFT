@@ -23,6 +23,7 @@ const props = defineProps({
             :autoplay="{ delay: 0}"
             :speed=3000
             :loop=true
+            :noSwiping=true
             :loopPreventsSliding="true"
             :spaceBetween="50"
             >

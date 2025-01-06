@@ -9,7 +9,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <div class="collection-item lg:w-[23%] max-lg:w-[50%] max-md:w-[100%] max-lg:mr-auto max-lg:ml-auto max-lg:mb-12 border-t border-white pt-8" data-aos="fade-up" data-aos-offset="300">
+    <div class="collection-item lg:w-[23%] max-lg:w-[50%] max-md:w-[100%] max-lg:mr-auto max-lg:ml-auto max-lg:mb-12 border-t border-white pt-8" data-aos="fade-up" data-aos-offset="200">
         <div class="item-inner">
             <div class="item-title w-[190px] m-width-100 mb-2">
                 <p class="font-mont uppercase larger-text">
