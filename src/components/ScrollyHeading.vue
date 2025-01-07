@@ -2,6 +2,7 @@
  // Import Swiper Vue.js components
  import { Swiper, SwiperSlide} from 'swiper/vue';
  import { Autoplay} from 'swiper/modules';
+ import 'swiper/swiper-bundle.css'; 
 
 const {heading} = defineProps({
     heading: String,

@@ -1,4 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const mauriceArtPath = new URL('/src/assets/img/maurice-art.jpg', import.meta.url).href;
+const angelArtPath = new URL('/src/assets/img/angel-art.jpg', import.meta.url).href;
+const lauraArtPath = new URL('/src/assets/img/laura-art.jpg', import.meta.url).href;
+const argusArtPath = new URL('/src/assets/img/argus-art.jpg', import.meta.url).href;
+</script>
 <template>
   <section class="creations border-b border-white py-20 xl:py-40">
     <div class="container mx-auto">
@@ -15,7 +20,7 @@
             </div>
             <div
               class="creation-thumb h-[300px] max-lg:h-[400px] max-md:h-[350px]"
-              style="background-image: url('/src/assets/img/laura-art.jpg')"
+              :style="{ backgroundImage: `url(${lauraArtPath})` }"
             ></div>
           </div>
           <div class="creation-item border-t border-white pt-8 mb-10 md:mb-0" data-aos="fade-right" data-aos-offset="400">
@@ -27,7 +32,7 @@
             </div>
             <div
               class="creation-thumb h-[300px] max-lg:h-[400px] max-md:h-[350px]"
-              style="background-image: url('/src/assets/img/argus-art.jpg')"
+              :style="{ backgroundImage: `url(${argusArtPath})` }"
             ></div>
           </div>
         </div>
@@ -186,7 +191,7 @@
             </div>
             <div
               class="creation-thumb h-[300px] max-lg:h-[400px] max-md:h-[350px]"
-              style="background-image: url('/src/assets/img/maurice-art.jpg')"
+              :style="{ backgroundImage: `url(${mauriceArtPath})` }"
             ></div>
           </div>
           <div class="creation-item border-t border-white pt-8" data-aos="fade-left" data-aos-offset="400">
@@ -198,7 +203,7 @@
             </div>
             <div
               class="creation-thumb h-[300px] max-lg:h-[400px] max-md:h-[350px]"
-              style="background-image: url('/src/assets/img/angel-art.jpg')"
+              :style="{ backgroundImage: `url(${angelArtPath})` }"
             ></div>
           </div>
         </div>
