@@ -1,12 +1,11 @@
 <script setup lang="ts">
-const props = defineProps({
-    collection: 
-    {
-        title: String,
-        author: String,
-        image: String
-    }
-})
+const { collection } = defineProps<{
+  collection: {
+    title: string;
+    author: string;
+    image: string;
+  };
+}>();
 </script>
 <template>
     <div class="collection-item lg:w-[23%] max-lg:w-[50%] max-md:w-[100%] max-lg:mr-auto max-lg:ml-auto max-lg:mb-12 border-t border-white pt-8" data-aos="fade-up" data-aos-offset="200">

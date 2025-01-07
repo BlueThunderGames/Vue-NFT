@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const props = defineProps({
+const {faq} = defineProps<{
     faq: {
         id: Number,
         question: String,
         answer: String
     }
-})
+}>();
 </script>
 <template>
     <div class="faq-item border-b border-white py-10 xl:py-14" data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">

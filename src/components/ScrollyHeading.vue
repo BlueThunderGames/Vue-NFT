@@ -3,10 +3,7 @@
  import { Swiper, SwiperSlide} from 'swiper/vue';
  import { Autoplay} from 'swiper/modules';
 
-// Import Swiper styles
-import 'swiper/css';
-
-const props = defineProps({
+const {heading} = defineProps({
     heading: String,
     id: String ?? ''
 });
