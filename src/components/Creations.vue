@@ -5,7 +5,7 @@ const lauraArtPath = new URL('/src/assets/img/laura-art.jpg', import.meta.url).h
 const argusArtPath = new URL('/src/assets/img/argus-art.jpg', import.meta.url).href;
 </script>
 <template>
-  <section class="creations border-b border-white py-20 xl:py-40">
+  <section class="creations border-b border-white py-20 xl:py-40 overflow-x-hidden">
     <div class="container mx-auto">
       <div class="content-wrapper lg:flex lg:justify-between">
         <div
