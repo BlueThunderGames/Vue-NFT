@@ -17,13 +17,14 @@ const {heading} = defineProps({
         <div class="scrolly-inner text-center pt-14 xl:pt-28">
             <swiper 
             :modules="[Autoplay]"
-            :slidesPerView=2
+            :slidesPerView=1
             :autoplay="{ delay: 0}"
             :speed=3000
             :loop=true
             :noSwiping=true
             :loopPreventsSliding="true"
-            :spaceBetween="50"
+            :spaceBetween="0"
+            :breakpoints="{ 768: { slidesPerView: 2, spaceBetween: 50 } }"
             >
         <swiper-slide>
           <h3 class="pink relative pr-[97px] inline-block">
